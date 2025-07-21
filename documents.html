@@ -1,0 +1,35 @@
+---
+layout: default
+title: Documents
+---
+<h1>Documents</h1>
+<table id="documents" class="display"></table>
+
+<script src="/assets/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/assets/js/datatables.min.css">
+<script src="/assets/js/datatables.min.js"></script>
+<script>
+fetch('/data/documents.json')
+  .then(r => r.json())
+  .then(rows => {
+    rows.forEach(r => {
+      r.tags = (r.tags || []).join(', ');
+    });
+    new DataTable('#documents', {
+      data: rows,
+      columns: [
+        { title: 'Document', data: 'document',
+          render: (data, type, row) =>
+            row.document_url
+              ? `<a href="${row.document_url}" target="_blank" rel="noopener">${data}</a>`
+              : data
+        },
+        { title: 'Date', data: 'date' },
+        { title: 'Author', data: 'author' },
+        { title: 'Description', data: 'description' },
+        { title: 'Tags', data: 'tags' }
+      ],
+      pageLength: 25
+    });
+  });
+</script>

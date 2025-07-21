@@ -1,0 +1,23 @@
+[
+  {
+    "document": "Memo 14",
+    "document_url": "https://example.com/memo14.pdf",
+    "description": "Internal discussion of Project X budget.",
+    "quoted_evidence": "\"We will reallocate funds from the Q4 reserve to ensure Project X meets its delivery timeline.\"",
+    "tags": ["budget", "Project X", "Doe, Jane"]
+  },
+  {
+    "document": "Email 22",
+    "document_url": "https://example.com/email22.eml",
+    "description": "Confirms launch delay due to technical issues.",
+    "quoted_evidence": "\"Launch moves to Sept 5 due to unexpected technical complications.\"",
+    "tags": ["delay", "launch", "technical issues"]
+  },
+  {
+    "document": "Report 33",
+    "document_url": "https://example.com/report33.pdf",
+    "description": "Security concerns regarding data handling procedures.",
+    "quoted_evidence": "\"Current protocols may not meet federal compliance standards for sensitive data.\"",
+    "tags": ["security", "compliance", "data handling"]
+  }
+]
