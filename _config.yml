@@ -1,6 +1,1 @@
 title: "Journal Project"
-description: "A journalistic investigation based on recently released documents."
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
