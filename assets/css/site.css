@@ -1,0 +1,33 @@
+/* Basic styling for the site */
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tables styling */
+table.display {
+  width: 100% !important;
+}
+
+/* Ensure long text wraps in table cells */
+.dataTables_wrapper td {
+  word-wrap: break-word;
+  max-width: 300px;
+}
+
+/* Style for quoted evidence cells */
+td:nth-child(3) {
+  font-style: italic;
+  color: #555;
+}
+
+/* Better link styling */
+table a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
