@@ -13,7 +13,10 @@ layout: default
 
 {% for post in posts %}
 <article id="{{ post.title | slugify }}">
-  <h1>{{ post.title }}</h1>
-  {{ post.content }}
+  <div class="post-date">{{ post.date | date: "%b %d, %Y" }}</div>
+  <div class="post-content">
+    <h1>{{ post.title }}</h1>
+    {{ post.content }}
+  </div>
 </article>
 {% endfor %}
